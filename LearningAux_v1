@@ -1,0 +1,76 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    6444046c-ad10-4a3f-889f-1cf66dbc8d87:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 480
+        'y': 140
+      z: 2
+      parent: db81603b-d211-4f67-bcee-1c2481914559
+      embeds: []
+      iscontainedinside:
+        - db81603b-d211-4f67-bcee-1c2481914559
+        - db81603b-d211-4f67-bcee-1c2481914559
+        - db81603b-d211-4f67-bcee-1c2481914559
+    27b3218c-bf7d-46ec-be19-efeadc51c9bb:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 380
+        'y': 140
+      z: 2
+      parent: db81603b-d211-4f67-bcee-1c2481914559
+      embeds: []
+    4047f90a-599d-4969-86e2-ac14c572642c:
+      size:
+        width: 590
+        height: 260
+      position:
+        x: 220
+        'y': 30
+      z: 0
+      embeds:
+        - db81603b-d211-4f67-bcee-1c2481914559
+    db81603b-d211-4f67-bcee-1c2481914559:
+      size:
+        width: 550
+        height: 190
+      position:
+        x: 240
+        'y': 80
+      z: 1
+      parent: 4047f90a-599d-4969-86e2-ac14c572642c
+      embeds:
+        - 27b3218c-bf7d-46ec-be19-efeadc51c9bb
+        - 6444046c-ad10-4a3f-889f-1cf66dbc8d87
+Resources:
+  EC2I4R3E4:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      NetworkInterfaces:
+        - SubnetId: !Ref PublicSubnet
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6444046c-ad10-4a3f-889f-1cf66dbc8d87
+  EC2IGOTMQ:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 27b3218c-bf7d-46ec-be19-efeadc51c9bb
+  PublicSubnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: db81603b-d211-4f67-bcee-1c2481914559
+  VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 4047f90a-599d-4969-86e2-ac14c572642c
