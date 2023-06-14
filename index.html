@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symposium LKE</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+  <script>
+	function myMap() {
+		/*var mapProp= {
+		  center:new google.maps.LatLng(53.290584, -6.363319),
+		  zoom:5,
+		};
+		var map = new google.maps.Map(document.getElementById("map"), mapProp);*/
+		// The location of Uluru
+		var uluru = {lat: 53.290, lng: -6.363};
+		// The map, centered at Uluru
+		var map = new google.maps.Map(
+		    document.getElementById('map'), {zoom: 15, center: uluru});
+		// The marker, positioned at Uluru
+		var marker = new google.maps.Marker({position: uluru, map: map});
+	}
+	//myMap();
+  </script>
+
+</head>
+
+<body class="body-wrapper">
+
+
+<!--========================================
+=            Navigation Section            =
+=========================================-->
+
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+  <div class="container-fluid p-0">
+      <!-- logo -->
+      <a class="navbar-brand" href="index.html">
+        <img height="80%" width="80%" src="images/logodub.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown active dropdown-slide">
+          <a class="nav-link" data-toggle="dropdown">Home
+            <span>/</span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="index.html">Home</a>
+            <a class="dropdown-item" href="posters.html">Posters</a>
+            <a class="dropdown-item" href="registration.html">Registration</a>
+            <a class="dropdown-item" href="accommodation.html">Accommodation and Transport</a>
+            <a class="dropdown-item" href="committee.html">Committee</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="schedule.html">Program<span>/</span></a>
+        </li>
+        <li class="nav-item dropdown active dropdown-slide">
+			<a class="nav-link" data-toggle="dropdown">Call for papers
+			  <span>/</span>
+			</a>
+			<!-- Dropdown list -->
+			<div class="dropdown-menu">
+			  <a class="dropdown-item" href="call-papers.html">Call for papers</a>
+			  <a class="dropdown-item" href="important-dates.html">Important dates</a>
+			</div>
+		</li>
+        <li class="nav-item dropdown dropdown-slide">
+          <a class="nav-link" data-toggle="dropdown">Speakers<span>/</span></a>
+            <!-- Dropdown list -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="speakers.html">Speakers</a>
+              <a class="dropdown-item" href="single-speaker1.html">Speaker 1</a>
+              <a class="dropdown-item" href="single-speaker2.html">Speaker 2</a>
+              <a class="dropdown-item" href="single-speaker3.html">Speaker 3</a>
+              <a class="dropdown-item" href="single-speaker4.html">Speaker 4</a>
+              <a class="dropdown-item" href="single-speaker5.html">Speaker 5</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact / Venue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="previous.html">Previous LKE</a>
+        </li>
+      </ul>
+      <a class="navbar-lke" href="#">
+        <img src="images/logolke.png" alt="ticket"> <!--====  Top right logo  ====-->
+      </a>
+      </div>
+  </div>
+</nav>
+
+<!--====  End of Navigation Section  ====-->
+
+
+
+<!--============================
+=            Banner            =
+=============================-->
+
+<section class="banner bg-banner-one overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Content Block -->
+				<div class="block">
+					<!-- Coundown Timer -->
+					<!--<div class="timer"></div>-->
+					<h3>9th International Symposium on Language & Knowledge Engineering <span class="alternate">LKE 2024</span></h3>
+					<h6><b>tbd, Ireland</b></h6>
+					<h6><b>Technological University Dublin, Tallaght Campus</b></h6>
+					<!-- Action Button -->
+					<!--<a href="#" class="btn btn-white-md"></a>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!--====  End of Banner  ====-->
+
+<!--===========================
+=            About            =
+============================-->
+
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 align-self-center">
+				<div class="image-block bg-about">
+					<img class="img-fluid" src="images/lkebuap.jpeg" alt="">
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 align-self-center">
+				<div class="content-block">
+					<h2>LKE <span class="alternate">2024</span></h2>
+					<div class="description-one">
+						<p>
+							9th International Symposium on Language & Knowledge Engineering
+						</p>
+					</div>
+					<div class="description-two">
+						<p>This ninth edition of the International Symposium on Language Knowledge Engineering will be held in Dublin, Ireland.</p>
+						<p></p>
+						<p></p>
+						<p>The Symposium, organized by the Department of Computing of the <a href="https://www.it-tallaght.ie/contactus">Technological University Dublin, Tallaght Campus</a>, will be a forum for exchanging scientific results and experiences, as well as sharing new knowledge, and increasing the co-operation between research groups in language processing and related areas.</p>
+					</div>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="https://lkesymposium.tudublin.ie/call-papers.html" class="btn btn-main-md">Submit work</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="call-papers.html" class="btn btn-transparent-md">Read more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--==============================
+=            Sponsors            =
+===============================-->
+
+<section class="sponsors section bg-sponsors overlay-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Title -->
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/lkebuap.jpeg" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/conacyt.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/buap.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/logodub.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/mslogo.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/sponsors/smdb.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Sponsors  ====-->
+
+<!--================================
+=            Google Map            =
+=================================-->
+
+<section class="map">
+	<!-- Google Map -->
+	<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9539.659946290807!2d-6.3717538!3d53.2910579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8ec071f5%3A0xb6cf7501e0d9522a!2sTechnological+University+Dublin+-+Tallaght+Campus!5e0!3m2!1sen!2sie!4v1551794708445" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	<div class="address-block">
+		<h4>Conference Venue</h4>
+		<ul class="address-list p-0 m-0">
+			<li><i class="fa fa-home"></i><span>Tallaght Campus, Technological University Dublin.<br>Dublin, Ireland.</span></li>
+			<li><i class="fa fa-flag on fa-circle"></i><span>Blessington Rd, Tallaght, Dublin 24, D24 FKT9</span></li>
+		</ul>
+		<a onclick="openMap()" class="btn btn-white-md">Get Direction</a>
+	</div>
+</section>
+
+<!--====  End of Google Map  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+      	<div class="col-md-4 align-self-center">
+	        <div class="copyright-text">
+	          <p><a href="#">LKE</a> &#169; 2024 All Right Reserved</p>
+	        </div>
+	    </div>
+        <div class="col-md-4">
+          <div class="block text-center">
+            <ul class="social-links-footer list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="block text-center">
+        		<div class="footer-logo">
+	               <img src="images/logolke.png" alt="logo" class="img-fluid">
+	            </div>
+        	</div>
+	    </div>
+	    </div>
+      </div>
+    </div>
+</footer>
+
+
+  <!-- JAVASCRIPTS -->
+  <!-- jQuey -->
+  <script src="plugins/jquery/jquery.js"></script>
+  <!-- Popper js -->
+  <script src="plugins/popper/popper.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Smooth Scroll -->
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>  
+  <!-- Isotope -->
+  <script src="plugins/isotope/mixitup.min.js"></script>  
+  <!-- Magnific Popup -->
+  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick/slick.min.js"></script>  
+  <!-- SyoTimer -->
+  <!--<script src="plugins/syotimer/jquery.syotimer.min.js"></script>-->
+  <!-- Google Mapl -->
+  <!--
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGIhEPAZ6vg5Abs8r8yPe7Rw-ycwutz-s&callback=myMap" type=text/javascript></script>-->
+  <!--<script async defer 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGIhEPAZ6vg5Abs8r8yPe7Rw-ycwutz-s&callback=myMap"></script>-->
+  <script>
+	function openMap() {
+	  window.open("https://www.google.com/maps/place/Technological+University+Dublin+-+Tallaght+Campus/@53.2906798,-6.3634943,16z/data=!4m5!3m4!1s0x48670b4b8ec071f5:0xb6cf7501e0d9522a!8m2!3d53.2910578!4d-6.3629937");
+	}
+  </script>
+  <!--<script type="text/javascript" src="plugins/google-map/gmap.js"></script>-->
+  <!-- Custom Script -->
+  <!--<script src="js/custom.js"></script>-->
+</body>
+
+</html>
+
+
+
