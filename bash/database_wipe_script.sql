@@ -1,5 +1,0 @@
-DELETE FROM Follows;
-DELETE FROM Joins;
-DELETE FROM Workshop;
-DELETE FROM Team;
-DELETE FROM TheUser;
