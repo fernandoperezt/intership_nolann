@@ -16,3 +16,9 @@ cd /var
 sudo git clone --branch lke2024 https://github.com/fernandoperezt/intership_nolann.git www
 cd /var/www
 sudo unzip html.zip
+cd /var
+sudo mkdir appdb
+sudo git clone --branch database https://github.com/fernandoperezt/intership_nolann.git appdb
+cd appdb
+sudo service mariadb start
+sudo mariadb < db.sql
